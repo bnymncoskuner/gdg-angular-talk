@@ -1,3 +1,7 @@
-<p>
-    account-detail works!
-</p>
+<div class="data-table">
+    <p-dataTable [value]="data$ | async" [rows]="4" [paginator]="true">
+        <p-column field="date" header="Date"></p-column>
+        <p-column field="explanation" header="Explanation"></p-column>
+        <p-column field="amount" header="Amount"></p-column>
+    </p-dataTable>
+</div>

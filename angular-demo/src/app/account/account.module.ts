@@ -6,7 +6,6 @@ import { AccountRoutingModule } from './account-routing.module';
 import { AccountComponent } from './account.component';
 import { PanelModule } from 'primeng/components/panel/panel';
 import { ButtonModule } from 'primeng/components/button/button';
-import { AccountDetailModule } from '../account-detail/account-detail.module';
 
 @NgModule({
   imports: [
@@ -14,8 +13,7 @@ import { AccountDetailModule } from '../account-detail/account-detail.module';
     AccountRoutingModule,
     PanelModule,
     BrowserAnimationsModule,
-    ButtonModule,
-    AccountDetailModule
+    ButtonModule
   ],
   declarations: [AccountComponent]
 })

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AccountDetailComponent } from './account-detail.component';
 
 const routes: Routes = [
-  { path: 'detail', component: AccountDetailComponent },
+  { path: '', component: AccountDetailComponent }
 ];
 
 @NgModule({
