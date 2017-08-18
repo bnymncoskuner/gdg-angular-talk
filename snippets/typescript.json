@@ -1,0 +1,159 @@
+{
+    "App Module import layout": {
+        "prefix": "apm-1",
+        "body": "import { LayoutModule } from './layout/layout.module';"
+    },
+    "import layout as angular module": {
+        "prefix": "apm-2",
+        "body": "LayoutModule"
+    },
+    "Layout module exports its component": {
+        "prefix": "lam-1",
+        "body": "exports: [LayoutComponent]"
+    },
+    "Layout Module import Account": {
+        "prefix": "lam-2",
+        "body": "import { AccountModule } from '../account/account.module';"
+    },
+    "import account as angular module": {
+        "prefix": "lam-3",
+        "body": "AccountModule"
+    },
+    "define preloading strategy in layout module": {
+        "prefix": "lam-4",
+        "body": "{preloadingStrategy: PreloadAllModules}"
+    },
+    "import formsmodule in shared module": {
+        "prefix": "shm-1",
+        "body": "import { FormsModule } from \"@angular/forms\";"
+    },
+    "import formsmodule as angular module in shared module": {
+        "prefix": "shm-2",
+        "body": "FormsModule"
+    },
+    "export modules in shared module": {
+        "prefix": "shm-3",
+        "body": [
+            "exports: [",
+            "\tCommonModule,",
+            "\tFormsModule",
+            "]"
+        ]
+    },
+    "import data service in shared module": {
+        "prefix": "shm-4",
+        "body": "import { DataService } from './data.service';"
+    },
+    "provide data service in shared module": {
+        "prefix": "shm-5",
+        "body": "providers: [DataService]"
+    },
+    "import http in shared.data service": {
+        "prefix": "sds-1",
+        "body": "import { Http } from '@angular/http';"
+    },
+    "define private attribute in dataservice": {
+        "prefix": "sds-2",
+        "body": "private http: Http"
+    },
+    "define get method in dataservice": {
+        "prefix": "sds-3",
+        "body": [
+            "get(url: string) {",
+            "\treturn this.http.get(url);",
+            "}"
+        ]
+    },
+    "import rxjs map operator in app module": {
+        "prefix": "apm-3",
+        "body": "import 'rxjs/add/operator/map';"
+    },
+
+    "define account routing": {
+        "prefix": "arm-1",
+        "body": "{ path: 'account', component: AccountComponent }"
+    },
+    "define default routing": {
+        "prefix": "lrm-1",
+        "body": "{ path: '', pathMatch: 'full', redirectTo: 'account' }"
+    },
+    "import panel module": {
+        "prefix": "acm-1",
+        "body": "import { PanelModule } from 'primeng/components/panel/panel';"
+    },
+    "import panel module in ngmodule": {
+        "prefix": "acm-2",
+        "body": "PanelModule"
+    },
+    "import browser animations module": {
+        "prefix": "acm-3",
+        "body": "import { BrowserAnimationsModule } from '@angular/platform-browser/animations';"
+    },
+    "import browser animations module in ngmodule": {
+        "prefix": "acm-4",
+        "body": "BrowserAnimationsModule"
+    },
+    "import button module": {
+        "prefix": "acm-5",
+        "body": "import { ButtonModule } from 'primeng/components/button/button';"
+    },
+    "import button module in ngmodule": {
+        "prefix": "acm-6",
+        "body": "ButtonModule"
+    },
+    "define route in account-detail routing module": {
+        "prefix": "adrm-1",
+        "body": "{ path: 'account/detail', component: AccountDetailComponent }"
+    },
+    "define lazy loaded account detail in account routing module": {
+        "prefix": "arm-2",
+        "body": "{ path: 'account/detail', loadChildren: '../account-detail/account-detail.module#AccountDetailModule'}"
+    },
+    "import account-detail module in account module": {
+        "prefix": "acm-7",
+        "body": "import { AccountDetailModule } from '../account-detail/account-detail.module';"
+    },
+    "import account-detail module in account ng module": {
+        "prefix": "acm-8",
+        "body": "AccountDetailModule"
+    },
+    "import http in account detail component": {
+        "prefix": "adc-1",
+        "body": "import { Http } from '@angular/http';"
+    },
+    "inject http into account detail component": {
+        "prefix": "adc-2",
+        "body": "private http: Http"
+    },
+    "define data as Observable": {
+        "prefix": "adc-3",
+        "body": "data$: Observable<any>;"
+    },
+    "fetch data in account detail component": {
+        "prefix": "adc-4",
+        "body": "this.data$ = this.http.get('/assets/data/account-details.json').map(resp => resp.json());"
+    },
+    "import datatable in account detail module": {
+        "prefix": "adm-1",
+        "body": "import { DataTableModule } from 'primeng/components/datatable/datatable';"
+    },
+    "import sharedmodule in account detail module": {
+        "prefix": "adm-2",
+        "body": "import { SharedModule } from 'primeng/components/common/shared';"
+    }
+    /*
+    	// Place your snippets for TypeScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+    	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    	// same ids are connected.
+    	// Example:
+    	"Print to console": {
+    		"prefix": "log",
+    		"body": [
+    			"console.log('$1');",
+    			"$2"
+    		],
+    		"description": "Log output to console"
+    	}
+    */
+}

@@ -1,0 +1,57 @@
+{
+    "header css part 1": {
+        "prefix": "hes-1",
+        "body": [
+            "#Header",
+            "\theight: 60px;",
+            "\tbackground-color: green;",
+            "\tmargin: -8px;",
+            ""
+        ]
+    },
+    "header css part 2": {
+        "prefix": "hes-2",
+        "body": [
+            ".title",
+            "\tfont-size: 30px;",
+            "\tfont-weight: 700;",
+            "\tcolor: white;",
+            "\ttext-align: center;",
+            "\tpadding-top: 10px;",
+            "\tcursor: pointer;",
+            ""
+        ]
+    },
+    "activities css dropdown": {
+        "prefix": "aas-1",
+        "body": [
+            "p-dropdown",
+            "\tfloat: right;",
+            "\tmargin-bottom: 15px;",
+            ""
+        ]
+    },
+    "account detail component css": {
+        "prefix": "ads-1",
+        "body": [
+            ".data-table",
+            "\tmargin-top: 25px;",
+            "\twidth: 80%;"
+        ]
+    }
+    /*
+    	// Place your snippets for Sass here. Each snippet is defined under a snippet name and has a prefix, body and 
+    	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    	// same ids are connected.
+    	// Example:
+    	"Print to console": {
+    		"prefix": "log",
+    		"body": [
+    			"console.log('$1');",
+    			"$2"
+    		],
+    		"description": "Log output to console"
+    	}
+    */
+}
